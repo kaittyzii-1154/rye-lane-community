@@ -1,0 +1,212 @@
+/* Paper collage / apple green / berry, with static colour washes. */
+:root{--paper:#fffef8;--ink:#343b2d;--red:#a44955;--line:#cbd4a3;--sage:#edf1d3;--yellow:#f1e8ad}body{background:#fffef8;color:#343b2d}header{background:#fffef8;color:#343b2d;border-bottom:1px solid #c5d294}.brand{color:#8a3544}.header-note{color:#8a3544;border:1px solid #b7787e;background:linear-gradient(115deg,#fffef7,#f7e5e9);border-radius:2px}nav a:hover{color:#a44955}.hero{background:radial-gradient(ellipse 35% 24% at 8% 17%,#dae7f8a6,transparent 100%),radial-gradient(ellipse 38% 24% at 94% 23%,#f6dce2a6,transparent 100%),radial-gradient(ellipse 38% 25% at 47% 61%,#f6eab666,transparent 100%)}.hero-title .home-title{color:#8a3544;font-family:Georgia,serif;font-weight:400;text-transform:none;letter-spacing:-1.3px;font-size:44px}.hero-title .home-title:after{width:155px;height:4px;background:linear-gradient(90deg,#aac66c,#f0de9c,#d599a6);transform:rotate(-1deg)}.home-statement{color:#43463c}.hero-top .eyebrow{color:#73833b}.edition{color:#8b7375}.illustrated-directory{gap:25px}.illustrated-link,.illustrated-link:nth-child(n){background:#fffef8;border:1px solid #b8c783;box-shadow:3px 3px 0 #e7ebd4;transform:none}.illustrated-link:nth-child(1),.illustrated-link:nth-child(6){background:radial-gradient(ellipse at 80% 15%,#d4e4f3 0,transparent 70%),linear-gradient(135deg,#fffef8,#f1f5e7)}.illustrated-link:nth-child(2),.illustrated-link:nth-child(8){background:radial-gradient(ellipse at 20% 20%,#dde9b6 0,transparent 74%),linear-gradient(145deg,#fffef8,#f3f5e6)}.illustrated-link:nth-child(3),.illustrated-link:nth-child(7){background:radial-gradient(ellipse at 82% 25%,#f2d4df 0,transparent 75%),linear-gradient(140deg,#fffef8,#fff7ec)}.illustrated-link:nth-child(4){background:linear-gradient(140deg,#eef4d7,#fffef8 60%,#e7eff6)}.illustrated-link:nth-child(5),.illustrated-link:nth-child(9){background:radial-gradient(ellipse at 25% 12%,#f2e6b6 0,transparent 75%),linear-gradient(145deg,#fffef8,#f5e8e9)}.illustrated-link:before{border-top-color:#ffffffbb}.illustrated-link h2{color:#663d45;font-weight:700;font-family:Georgia,serif;font-size:24px;letter-spacing:-.6px}.illustrated-link p{color:#636a4b;font-weight:400}.illustrated-link:hover,.illustrated-link:nth-child(n):hover{border-color:#8a3544;box-shadow:4px 5px 0 #dce4ba;transform:translateY(-3px)}.illustrated-link svg{color:#59683e}.tile-arrow,.illustrated-link:nth-child(n) .tile-arrow{color:#a44955}.illustrated-link svg [fill="#f7edda"],.illustrated-link svg [fill="#f6edda"],.illustrated-link svg [fill="#f8edda"]{fill:#fffdf0}.illustrated-link svg [fill="#a54831"],.illustrated-link svg [fill="#a44731"],.illustrated-link svg [fill="#a74d37"],.illustrated-link svg [fill="#a53f2c"],.illustrated-link svg [fill="#ad4c32"],.illustrated-link svg [fill="#a95a42"]{fill:#bd7881}.illustrated-link svg [fill="#b6c6a7"],.illustrated-link svg [fill="#8fa58c"],.illustrated-link svg [fill="#8ca78e"],.illustrated-link svg [fill="#406c57"]{fill:#acc869}.illustrated-link svg [fill="#d7b36b"],.illustrated-link svg [fill="#d6b166"],.illustrated-link svg [fill="#d6b163"],.illustrated-link svg [fill="#edcb79"],.illustrated-link svg [fill="#e2b35e"],.illustrated-link svg [fill="#e5bd66"]{fill:#e5d68e}.illustrated-link:nth-child(3) svg [fill="#a44731"]{fill:#b86a79}.directory-caption{color:#77814e}.stories{background:#fffef8}.feed-explainer,.history-end{background:linear-gradient(110deg,#edf2d8,#fff9ec)}.community-links>a{background:linear-gradient(145deg,#f0f4dc,#fffef8)}.community-links>a:nth-child(2n){background:linear-gradient(145deg,#e6eef7,#fff7f0)}.walk-cards article{background:linear-gradient(150deg,#e1ecf7,#fffef8)}.walk-cards article:nth-child(2){background:linear-gradient(150deg,#e3edbc,#fffef8)}.walk-cards article:nth-child(3){background:linear-gradient(150deg,#f2dce4,#fffef8)}.solid{background:#8a3544;color:#fffef8}.timeline article>span,.text-link:hover{color:#8a3544}.explore .scene-img{background:#fffef8;border:1px solid #c8c9bc}.explore .scene-img img{filter:grayscale(1)}footer{background:linear-gradient(110deg,#dbe7b3,#f5efd7 55%,#eedde1);color:#434b34;border-top:1px solid #c5d294}footer .brand{color:#8a3544}dialog,.dialog-bar{background:#fffef8}.dialog-content>img{background:#fffef8}label{color:#663d45}select,textarea{background:#fffef8;border-color:#b8c783}.filters button.active{background:#59683e;border-color:#59683e}@media(max-width:760px){.hero-title .home-title{font-size:32px}.illustrated-link h2{font-size:17px}.illustrated-directory{gap:13px}.hero{background:radial-gradient(ellipse at 0 10%,#e4edf780,transparent 40%),radial-gradient(ellipse at 100% 25%,#f7e2e880,transparent 45%)}}@media(max-width:450px){.illustrated-link h2{font-size:15px}}
+
+/* Shared interior-page colour wash, with calm image surfaces. */
+body:not(:has(.hero)){background:radial-gradient(ellipse 65% 480px at 0 180px,#e0ebf6a6,transparent 100%),radial-gradient(ellipse 60% 650px at 100% 460px,#f3dfe7a1,transparent 100%),radial-gradient(ellipse 70% 600px at 25% 1050px,#f3edc780,transparent 100%),#fffef8;background-repeat:no-repeat}body:not(:has(.hero)) header{background:#fffef8e8}body:not(:has(.hero)) main{background:transparent}.stories{background:transparent}.scene-index{color:#343b2d}.open-arrow,.tile-arrow,.text-link>span,.solid>span{display:none}.your-view select,.your-view textarea{background:#fffef8b8}.dialog-content>img{background:#fffef8}.dialog-content .look-prompt{background:linear-gradient(110deg,#edf2d880,#f6e3eb66);padding:20px}.about{border-bottom-color:#cbd4a3}
+
+/* Individual page compositions within the shared pastel palette. */
+body[data-page="explore"]{background:radial-gradient(ellipse 85% 650px at 100% 190px,#cfe2f5b8,transparent 100%),radial-gradient(ellipse 60% 650px at 0 1000px,#e1eacb80,transparent 100%),#fffef8}
+body[data-page="shops"]{background:radial-gradient(ellipse 100% 650px at 45% 250px,#f3e6b8b3,transparent 100%),radial-gradient(ellipse 60% 650px at 100% 1050px,#ecdce580,transparent 100%),#fffef8}
+body[data-page="stories"]{background:radial-gradient(ellipse 90% 700px at 0 330px,#f0cfdcb3,transparent 100%),radial-gradient(ellipse 75% 650px at 100% 1100px,#f5e8c29c,transparent 100%),#fffef8}
+body[data-page="community"]{background:radial-gradient(ellipse 85% 750px at 100% 380px,#dae9b9ad,transparent 100%),radial-gradient(ellipse 70% 650px at 0 1250px,#dceaf580,transparent 100%),#fffef8}
+body[data-page="history"]{background:radial-gradient(ellipse 90% 900px at 0 400px,#f2e3b3a6,transparent 100%),radial-gradient(ellipse 75% 800px at 100% 1500px,#edddd48c,transparent 100%),#fffef8}
+body[data-page="walk"]{background:radial-gradient(ellipse 100% 600px at 50% 220px,#e1eac0ad,transparent 100%),radial-gradient(ellipse 75% 700px at 100% 850px,#d4e6f299,transparent 100%),#fffef8}
+body[data-page="local-links"]{background:radial-gradient(ellipse 90% 700px at 0 270px,#dddcf2a6,transparent 100%),radial-gradient(ellipse 75% 600px at 100% 900px,#dee9c48c,transparent 100%),#fffef8}
+body[data-page="about"]{background:radial-gradient(ellipse 90% 650px at 100% 250px,#f2dbcaad,transparent 100%),radial-gradient(ellipse 70% 650px at 0 850px,#eee4bc80,transparent 100%),#fffef8}
+body[data-page="your-view"]{background:radial-gradient(ellipse 90% 650px at 50% 500px,#eadcf0a6,transparent 100%),radial-gradient(ellipse 65% 600px at 0 180px,#f1e3d780,transparent 100%),#fffef8}
+/* Whiter canvas and lighter, less green colour washes. */
+:root{--paper:#fffffd;--sage:#f5f5ea;--line:#dbddd2}body,header{background-color:#fffffd}header{background:#fffffdf2}.hero{background:radial-gradient(ellipse 35% 24% at 8% 17%,#e6eef880,transparent 100%),radial-gradient(ellipse 38% 24% at 94% 23%,#f8e8ed80,transparent 100%),radial-gradient(ellipse 38% 25% at 47% 61%,#faf3dd55,transparent 100%)}body[data-page="explore"]{background:radial-gradient(ellipse 85% 650px at 100% 190px,#e3eef88c,transparent 100%),radial-gradient(ellipse 60% 650px at 0 1000px,#f4f2e550,transparent 100%),#fffffd}body[data-page="shops"]{background:radial-gradient(ellipse 100% 650px at 45% 250px,#faf0d580,transparent 100%),radial-gradient(ellipse 60% 650px at 100% 1050px,#f4e9ef60,transparent 100%),#fffffd}body[data-page="stories"]{background:radial-gradient(ellipse 90% 700px at 0 330px,#f7e3eb88,transparent 100%),radial-gradient(ellipse 75% 650px at 100% 1100px,#faf1da70,transparent 100%),#fffffd}body[data-page="community"]{background:radial-gradient(ellipse 85% 750px at 100% 380px,#f0f2e480,transparent 100%),radial-gradient(ellipse 70% 650px at 0 1250px,#e6eff870,transparent 100%),#fffffd}body[data-page="history"]{background:radial-gradient(ellipse 90% 900px at 0 400px,#faf0d580,transparent 100%),radial-gradient(ellipse 75% 800px at 100% 1500px,#f5e9e360,transparent 100%),#fffffd}body[data-page="walk"]{background:radial-gradient(ellipse 100% 600px at 50% 220px,#f3f3e580,transparent 100%),radial-gradient(ellipse 75% 700px at 100% 850px,#e4eff880,transparent 100%),#fffffd}body[data-page="local-links"]{background:radial-gradient(ellipse 90% 700px at 0 270px,#eeebf680,transparent 100%),radial-gradient(ellipse 75% 600px at 100% 900px,#f4f2e560,transparent 100%),#fffffd}body[data-page="about"]{background:radial-gradient(ellipse 90% 650px at 100% 250px,#faece180,transparent 100%),radial-gradient(ellipse 70% 650px at 0 850px,#faf4df60,transparent 100%),#fffffd}body[data-page="your-view"]{background:radial-gradient(ellipse 90% 650px at 50% 500px,#f2e9f780,transparent 100%),radial-gradient(ellipse 65% 600px at 0 180px,#faf0e760,transparent 100%),#fffffd}.explore .scene-img,dialog,.dialog-bar,.dialog-content>img{background:#fffffd}.feed-explainer,.history-end{background:linear-gradient(110deg,#f5f5e9,#fffaf1)}footer{background:linear-gradient(110deg,#f1f3e6,#fcf8ed 55%,#f7edf0)}.illustrated-link:nth-child(2),.illustrated-link:nth-child(8){background:radial-gradient(ellipse at 20% 20%,#eef1d9 0,transparent 74%),linear-gradient(145deg,#fffffd,#fafbf4)}.illustrated-link:nth-child(4){background:linear-gradient(140deg,#f4f6e9,#fffffd 60%,#edf3fa)}
+
+/* Home: original artwork, simple outlines and quieter typography. */
+body[data-page="index"] .hero{background:none}
+body[data-page="index"] .hero-title .home-title{font-size:clamp(28px,4.1vw,46px)}
+body[data-page="index"] .home-statement{font-size:14px;line-height:1.8}
+body[data-page="index"] header nav{font-size:11px}
+body[data-page="index"] .illustrated-link:nth-child(n){background:transparent;border:1px solid #b9bcb0;box-shadow:none;padding:10px 10px 18px;transform:none}
+body[data-page="index"] .illustrated-link::before,body[data-page="index"] .illustrated-link::after{display:none}
+body[data-page="index"] .illustrated-link:nth-child(n):hover{background:transparent;border-color:#8a3544;box-shadow:none;transform:translateY(-2px)}
+body[data-page="index"] .illustrated-link .artist-icon{width:100%;max-width:none;height:190px;margin:0 auto 8px}
+body[data-page="index"] .illustrated-link h2{font-size:19px;line-height:1.2;letter-spacing:-.3px;margin:0}
+body[data-page="index"] .tile-arrow{display:none}
+@media(max-width:760px){body[data-page="index"] .illustrated-link .artist-icon{height:160px}body[data-page="index"] .illustrated-link h2{font-size:17px}}
+@media(max-width:450px){body[data-page="index"] .illustrated-link .artist-icon{height:135px}body[data-page="index"] .illustrated-link h2{font-size:15px}}
+
+/* Reference-inspired square illustration tiles. */
+body[data-page="index"] .illustrated-directory{gap:24px;align-items:stretch}
+body[data-page="index"] .illustrated-link:nth-child(n){position:relative;display:flex;flex-direction:column;justify-content:flex-end;aspect-ratio:1;min-height:0;padding:0 8px 12px;overflow:hidden;background:#fff;border-color:#d6d6ce}
+body[data-page="index"] .illustrated-link .artist-icon{position:absolute;inset:0 0 32px;width:100%;height:calc(100% - 32px);max-width:none;margin:0}
+body[data-page="index"] .illustrated-link h2{position:relative;font-family:Arial,sans-serif;font-size:13px;font-weight:500;line-height:1.2;letter-spacing:.025em;text-align:center}
+body[data-page="index"] .illustrated-link:last-child .artist-icon{inset:0;height:100%}
+body[data-page="index"] .illustrated-link:last-child .speech-title{position:absolute;left:26%;top:40%;width:40%;margin:0;font-size:12px;color:#569bbe;transform:translateY(-50%);text-transform:uppercase}
+@media(max-width:450px){body[data-page="index"] .illustrated-directory{gap:14px}body[data-page="index"] .illustrated-link h2{font-size:11px}body[data-page="index"] .illustrated-link:last-child .speech-title{font-size:9px}}
+
+/* Borderless tiles with captions close to the drawings. */
+body[data-page="index"] .illustrated-link:nth-child(n),body[data-page="index"] .illustrated-link:nth-child(n):hover{border:0;background:#fff;box-shadow:none}
+body[data-page="index"] .illustrated-link:nth-child(n){justify-content:flex-start;padding:0;overflow:hidden}
+body[data-page="index"] .illustrated-link .artist-icon{position:relative;inset:auto;flex:none;width:100%;height:82%;margin:0}
+body[data-page="index"] .illustrated-link h2{margin:-3px 8px 0}
+body[data-page="index"] .illustrated-link:last-child .artist-icon{position:absolute;inset:0;height:100%;margin:0}
+body[data-page="index"] .illustrated-link:last-child .speech-title{left:27%;top:47%;width:38%;margin:0;transform:translateY(-50%);text-align:center}
+body[data-page="index"] .illustrated-link:nth-child(1) h2,body[data-page="index"] .illustrated-link:nth-child(5) h2{transform:translateY(-16px)}
+body[data-page="index"] .illustrated-link:nth-child(3) h2,body[data-page="index"] .illustrated-link:nth-child(4) h2{transform:translateY(-24px)}
+body[data-page="index"] .illustrated-link:nth-child(7) h2,body[data-page="index"] .illustrated-link:nth-child(8) h2{transform:translateY(-44px)}
+body[data-page="index"] .illustrated-link:last-child .speech-title{top:44%;transform:translateY(-50%)}
+@media(max-width:450px){body[data-page="index"] .illustrated-link:nth-child(7) h2,body[data-page="index"] .illustrated-link:nth-child(8) h2{transform:translateY(-25px)}body[data-page="index"] .illustrated-link:nth-child(3) h2,body[data-page="index"] .illustrated-link:nth-child(4) h2{transform:translateY(-14px)}}
+/* Equal artwork areas on a warm, uniform gallery canvas. */
+body[data-page="index"] .illustrated-link:last-child .artist-icon{position:relative;inset:auto;width:100%;height:82%;margin:0}
+body[data-page="index"] .illustrated-link:last-child .speech-title{left:31%;top:36.1%;width:31.2%;transform:translateY(-50%)}
+/* Shared caption baseline for every row. */
+body[data-page="index"] .illustrated-link:nth-child(n):not(:last-child) h2{position:absolute;left:0;right:0;top:82%;margin:0 8px;transform:none;line-height:1.2}
+/* Fine adjustments to the local illustration and speech label. */
+body[data-page="index"] .illustrated-link:nth-child(7) .artist-icon{transform:scale(1.13);transform-origin:50% 42%}
+body[data-page="index"] .illustrated-link:last-child .speech-title{font-size:13px;font-weight:500;letter-spacing:.035em;text-transform:uppercase;left:31.5%;width:31.2%;top:36.1%}
+@media(max-width:450px){body[data-page="index"] .illustrated-link:last-child .speech-title{font-size:10px;letter-spacing:.015em}}
+body[data-page="index"] .illustrated-link:last-child .speech-title{text-transform:none;letter-spacing:0;white-space:nowrap;font-size:12px}
+@media(max-width:450px){body[data-page="index"] .illustrated-link:last-child .speech-title{font-size:9px}}
+
+/* Homepage invitation */
+.home-subtitle{font:17px/1.6 Arial,Helvetica,sans-serif;color:#50514b;max-width:650px;margin:0 auto 24px;text-align:center}
+@media(max-width:760px){.home-subtitle{font-size:15px;margin-bottom:20px}}
+
+/* Shared footer contact details */
+footer>p{font:14px/1.7 Arial,Helvetica,sans-serif;margin:0}.footer-contact{font:11px/1.7 Arial,Helvetica,sans-serif}.footer-contact h2{font:400 14px/1.7 Arial,Helvetica,sans-serif;letter-spacing:normal;word-spacing:normal;margin:0 0 12px}.footer-contact p{font:400 14px/1.7 Arial,Helvetica,sans-serif;margin:0 0 4px}.footer-contact a{display:block;font-size:11px;overflow-wrap:anywhere}.footer-contact a:hover{text-decoration:underline}
+
+/* Calm, aligned footer typography */
+footer{align-items:flex-start;gap:32px 60px}
+footer>p{font:400 14px/1.8 Arial,Helvetica,sans-serif;margin:0;color:#434b34}
+.footer-contact{min-width:210px;text-align:left;font-family:Arial,Helvetica,sans-serif}
+.footer-contact h2{font:400 11px/1.5 Arial,Helvetica,sans-serif;letter-spacing:.04em;word-spacing:normal;color:#73766c;margin:0 0 14px}
+.footer-contact p{font:400 14px/1.8 Arial,Helvetica,sans-serif;letter-spacing:normal;color:#434b34;margin:0 0 8px}
+.footer-contact a{font:400 12px/1.8 Arial,Helvetica,sans-serif;letter-spacing:normal;color:#62665b;text-decoration:none;margin:0 0 5px}
+.footer-contact a:hover{color:#8a3544;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:600px){footer{gap:28px}.footer-contact{min-width:0;width:100%}}
+
+/* Homepage title */
+body[data-page="index"] .hero-title .home-title{font-family:Arial,Helvetica,sans-serif;font-weight:500;letter-spacing:-.035em}
+
+/* Navigation and geometric street wordmark */
+header nav,body[data-page="index"] header nav{font-size:14px}
+header .brand,footer .brand{position:relative;display:block;padding-left:44px;flex-shrink:0}
+header .brand::before,footer .brand::before{content:"";position:absolute;left:0;top:-2px;width:34px;height:44px;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2034%2044%22%3E%3Cpath%20fill%3D%22%2383c5b1%22%20d%3D%22M3%204h10v25H3z%22%2F%3E%3Cpath%20fill%3D%22%23f1df70%22%20d%3D%22M23%204h8v18h-8z%22%2F%3E%3Cpath%20fill%3D%22%23ef8067%22%20d%3D%22m2%2031%208-8%208%208v10H2z%22%2F%3E%3Cpath%20d%3D%22M17%204v32h5V4%22%20fill%3D%22none%22%20stroke%3D%22%23343b2d%22%20stroke-width%3D%221.2%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat}
+@media(max-width:760px){header nav,body[data-page="index"] header nav{font-size:12px}}
+
+/* Building wordmark, stacked above the name */
+header .brand,footer .brand{display:flex;flex-direction:column;align-items:center;width:140px;padding:0;font-size:25px;letter-spacing:-1px;text-align:center}
+header .brand::before,footer .brand::before{position:static;display:block;flex:none;width:110px;height:72px;margin:0 0 9px;background:url("about.svg") center/contain no-repeat}
+header .brand span,footer .brand span{font-size:8px;letter-spacing:2px;margin-top:7px}
+@media(max-width:760px){header .brand,footer .brand{width:120px;font-size:23px}header .brand::before,footer .brand::before{width:96px;height:62px;margin-bottom:7px}}
+
+/* Balanced building and name, without a tagline */
+header .brand,footer .brand{width:120px;font:600 22px/1.1 Arial,Helvetica,sans-serif;letter-spacing:.035em}
+header .brand::before,footer .brand::before{width:104px;height:78px;margin-bottom:8px}
+@media(max-width:760px){header .brand,footer .brand{width:108px;font-size:20px}header .brand::before,footer .brand::before{width:94px;height:70px;margin-bottom:7px}}
+
+/* Consistent, moderately sized main headings */
+body[data-page="index"] .hero-title .home-title,main .page-heading{font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:clamp(28px,3.2vw,38px);line-height:1.15;letter-spacing:-.025em}
+main .page-heading em{font-style:normal;font-weight:inherit}
+
+/* Site-wide sans-serif typography, including dialogs and form controls. */
+html body,body *,body *::before,body *::after{font-family:Arial,Helvetica,sans-serif!important}
+
+/* Larger main headings and balanced footer */
+body[data-page="index"] .hero-title .home-title,main .page-heading{font-size:clamp(32px,3.7vw,44px)}
+footer{position:relative;align-items:center;min-height:200px}
+footer .brand{width:120px;font-size:22px;line-height:1.1;letter-spacing:.035em}
+footer .brand::before{width:120px;height:82px;margin-bottom:8px}
+footer>p{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;margin:0;line-height:1.8}
+footer .footer-contact{margin-left:auto}
+@media(max-width:760px){footer{min-height:190px;gap:25px}footer .brand{width:108px;font-size:20px}footer .brand::before{width:108px;height:74px}footer>p{position:static;transform:none;margin:auto;text-align:center}footer .footer-contact{margin-left:0}}
+
+/* More prominent headings and building identity */
+body[data-page="index"] .hero-title .home-title,main .page-heading{font-size:clamp(38px,4.8vw,60px);line-height:1.08}
+header .brand,footer .brand{width:150px;font-size:27px}
+header .brand::before,footer .brand::before{width:150px;height:104px;margin-bottom:10px}
+@media(max-width:760px){header .brand,footer .brand{width:124px;font-size:23px}header .brand::before,footer .brand::before{width:124px;height:86px}}
+
+/* Tight, equal-width building and wordmark */
+header .brand,footer .brand{width:max-content;font-size:22px;line-height:1;letter-spacing:.035em;gap:0}
+header .brand::before,footer .brand::before{width:100%;height:auto;aspect-ratio:117 / 55;margin:0 0 5px;background:url("logo-building.svg") center/100% 100% no-repeat;align-self:stretch}
+@media(max-width:760px){header .brand,footer .brand{width:max-content;font-size:20px}header .brand::before,footer .brand::before{width:100%;height:auto;margin-bottom:5px}}
+
+/* About: readable project background */
+.about-copy{max-width:720px}.about-copy h3{font-size:21px;line-height:1.35;font-weight:600;letter-spacing:normal;margin:32px 0 12px}.about-copy p{font-size:16px;line-height:1.85;margin:0 0 18px}
+
+/* Current-page navigation, independent of entry route */
+header nav a[aria-current="page"]{color:#8a3544;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:7px}
+header .header-note[aria-current="page"]{color:#8a3544;border-color:#8a3544;background:#f7edf0;text-decoration:underline;text-underline-offset:4px}
+
+/* Consistent full-frame street scene previews */
+.explore .scene-img img{object-fit:cover;object-position:center;width:100%;height:100%}
+
+/* Shops follow street scenes on the same page. */
+#shops{scroll-margin-top:28px;border-top:1px solid #dbddd2}#shops>.page-heading{margin-top:14px}
+
+/* Walking prompts follow everyday stories. */
+#walk{scroll-margin-top:28px;border-top:1px solid #dbddd2}#walk>.page-heading{margin-top:14px}
+
+/* Local directory follows community updates. */
+#local-connections{scroll-margin-top:28px;border-top:1px solid #dbddd2}#local-connections>.page-heading{margin-top:14px}
+
+/* Street history is a branch of Community. */
+#street-history{scroll-margin-top:28px;border-top:1px solid #dbddd2}#street-history>.page-heading{margin-top:14px}
+
+/* Community news cards and consistent subsection titles */
+.news-list{display:grid;gap:18px;margin:24px 0}.news-card{border:1px solid #cbd0c4;border-radius:8px;padding:24px 26px;background:#fffffdbd}.news-card h3{font-size:22px;line-height:1.35;font-weight:600;letter-spacing:normal;margin:10px 0 14px}.news-card p{font-size:15px;line-height:1.75;margin:0 0 14px}.news-card .eyebrow{font-size:11px}.news-read{font-size:13px;text-decoration:underline;text-underline-offset:4px}.news-more{margin:0 0 24px}.news-more[hidden]{display:none}
+body[data-page="community"] .feed-header h2,body[data-page="community"] .sub-heading,body[data-page="community"] .history-end h2{font-size:26px;line-height:1.3;letter-spacing:normal;font-weight:600}
+body[data-page="community"] .community-links h3,body[data-page="community"] .timeline h2{font-size:22px;line-height:1.35;letter-spacing:normal;font-weight:600}
+@media(max-width:600px){.news-card{padding:20px}.news-card h3{font-size:20px}}
+
+/* Trolley photograph collection: preserve the full photographs. */
+.trolley-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0}.trolley-gallery[hidden],#dialog-image[hidden]{display:none!important}.trolley-gallery img{display:block;width:100%;height:380px;object-fit:contain;background:#fffffd}
+@media(max-width:600px){.trolley-gallery{grid-template-columns:1fr}.trolley-gallery img{height:auto;max-height:500px}}
+
+/* Photograph carousel */
+.trolley-gallery{display:block;margin:24px 0}.trolley-gallery>img{width:100%;height:min(60vh,560px);object-fit:contain}.photo-controls{display:flex;align-items:center;justify-content:center;gap:24px;margin:16px 0}.photo-controls button{width:44px;height:44px;border:1px solid #b7bcae;background:#fffffd;color:#343b2d;font-size:24px;cursor:pointer}.photo-controls button:hover{background:#f2eee3}.photo-controls button:focus-visible{outline:2px solid #8a3544;outline-offset:3px}.photo-controls span{font-size:13px;min-width:40px;text-align:center}
+
+/* Carousel arrows occupy the blank side columns, never the photograph. */
+.trolley-gallery{position:relative;display:grid;grid-template-columns:52px minmax(0,1fr) 52px;column-gap:14px;row-gap:12px;align-items:center}
+.trolley-gallery>img{grid-column:2;grid-row:1;width:100%;height:min(60vh,560px);object-fit:contain}
+.photo-controls{display:contents}.photo-controls button{grid-row:1;margin:0;justify-self:center}.photo-controls button:first-child{grid-column:1}.photo-controls button:last-child{grid-column:3}.photo-controls span{grid-column:2;grid-row:2;justify-self:center}
+@media(max-width:600px){.trolley-gallery{grid-template-columns:36px minmax(0,1fr) 36px;column-gap:6px}.photo-controls button{width:34px;height:40px;font-size:22px}}
+
+/* Café interview card and player */
+.cafe-card-link{display:block;color:inherit;text-decoration:none}.cafe-card-link:focus-visible{outline:2px solid #8a3544;outline-offset:6px}.cafe-watch{display:inline-block;text-decoration:underline;text-underline-offset:4px;font-size:14px}.cafe-card-link:hover h2{color:#8a3544}#cafe-interview{width:min(900px,94vw);max-height:90vh;padding:0;border:1px solid #ddd}#cafe-video{display:block;width:100%;max-height:60vh;background:#111;margin:24px 0}#cafe-title{font-size:36px;font-weight:700;letter-spacing:-.025em}
+
+/* Café interview: introduction, viewing, and context */
+#cafe-interview .dialog-content{padding:30px 36px 36px}#cafe-interview .cafe-intro{font-size:18px;line-height:1.65;max-width:650px;color:#555b50;margin:16px 0 26px}.cafe-context{display:grid;grid-template-columns:1fr 1fr;gap:28px;border-top:1px solid #dedfd7;padding-top:22px;margin:0 0 26px}.cafe-context h3{font-size:16px;line-height:1.4;font-weight:600;letter-spacing:normal;margin:0 0 10px}.cafe-context p{font-size:14px;line-height:1.75;margin:0;color:#555b50}#cafe-interview #cafe-video{margin:0;border-radius:4px}@media(max-width:600px){#cafe-interview .dialog-content{padding:24px 20px}.cafe-context{grid-template-columns:1fr;gap:20px}}
+
+/* Unified typography spacing: normal prose, restrained heading tracking. */
+body{line-height:1.65}
+body :is(h1,h2,h3,h4,p,a,span,button,label,input,select,textarea,summary,li){letter-spacing:normal;word-spacing:normal}
+body :is(p,li){line-height:1.75}
+body :is(h1,h2,h3,h4){line-height:1.25}
+body[data-page="index"] .hero-title .home-title,main .page-heading{letter-spacing:-.025em;line-height:1.12}
+body .eyebrow{letter-spacing:.12em;line-height:1.6}
+header nav a{letter-spacing:0;line-height:1.45}
+header .brand,footer .brand{letter-spacing:.025em;line-height:1.1}
+.home-statement{letter-spacing:0;line-height:1.85}
+.home-subtitle{letter-spacing:0;line-height:1.65}
+body[data-page="index"] .illustrated-link h2{letter-spacing:0;line-height:1.4}
+.scene-meta h3,.story-copy h3,.story-strips h3,.shop-photo-grid h2,.walk-cards h2{letter-spacing:-.015em;line-height:1.3}
+body[data-page="community"] :is(.news-card h3,.community-links h3,.timeline h2,.feed-header h2,.sub-heading){letter-spacing:-.01em;line-height:1.35}
+.dialog-content h2,#cafe-title{letter-spacing:-.02em;line-height:1.2}
+.dialog-content p{letter-spacing:0;line-height:1.75}
+.cafe-context h3,.about-copy h3{letter-spacing:0;line-height:1.4}
+.cafe-context p,.about-copy p{letter-spacing:0;line-height:1.8}
+footer>p,.footer-contact h2,.footer-contact p,.footer-contact a{letter-spacing:0;line-height:1.75}
+body :is(.small-note,.news-read,.cafe-watch){letter-spacing:0;line-height:1.65}
+
+#drawing-gallery[hidden]{display:none!important}
+
+.walk-study{display:block;width:100%;border:1px solid #d4d6cc;background:#fffffd;padding:10px;margin:16px 0;text-align:left;cursor:pointer}.walk-study img{display:block;width:100%;height:180px;object-fit:contain}.walk-study span{font-size:12px;text-decoration:underline;text-underline-offset:3px}.walk-study:focus-visible{outline:2px solid #8a3544}
+
+/* Everyday Stories: editorial photo notes instead of Explore duplicates. */
+.photo-story{padding:36px 0 44px;border-top:1px solid #d1d4ca;scroll-margin-top:30px}.story-heading{margin-bottom:24px}.story-heading h3{font-size:clamp(26px,3vw,36px);line-height:1.2;letter-spacing:-.02em;margin:12px 0 0}.story-photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:24px}.story-photo-pair figure{margin:0}.story-photo-pair img{display:block;width:100%;height:380px;object-fit:contain;background:#fffffd}.story-photo-pair figcaption{font-size:12px;line-height:1.6;color:#666b61;margin:10px 0}.story-reading{display:grid;grid-template-columns:1.2fr 1fr;gap:44px;margin-top:18px}.story-reading>p{font-size:16px;line-height:1.8;margin:0}.story-reading aside{border-left:2px solid #b8c9c1;padding-left:22px}.story-reading h4{font-size:14px;font-weight:600;margin:0 0 10px}.story-reading aside p{font-size:14px;line-height:1.8;margin:0}.story-reading aside a{display:inline-block;font-size:13px;margin-top:14px;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:650px){.story-photo-pair,.story-reading{grid-template-columns:1fr;gap:20px}.story-photo-pair img{height:auto;max-height:420px}.photo-story{padding:28px 0}.story-reading{margin-top:14px}}
+/* Landscape opening pair and self-guided City Walks. */
+#story-moving .story-photo-pair img{height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 65%}
+.start-walk,.route-map{display:inline-block;margin-top:20px;padding:12px 18px;border:1px solid #8a3544;color:#8a3544;text-decoration:none;font-size:14px}.start-walk:hover,.route-map:hover{background:#f7edf0}
+.route-tabs{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}.route-tabs button{padding:12px 18px;border:1px solid #cdd1c6;background:#fffffd;cursor:pointer;border-radius:24px;font-size:14px}.route-tabs button[aria-pressed="true"]{background:#8a3544;color:white;border-color:#8a3544}.route-lead{display:grid;grid-template-columns:1fr 1fr;gap:36px;padding:30px;background:#f7f4ec;border-radius:10px}.route-lead h2{font-size:32px;font-weight:700;letter-spacing:-.02em;margin:12px 0 20px}.route-lead p{font-size:16px;line-height:1.8}.route-lead img{width:100%;height:280px;object-fit:cover}.route-stops{list-style:none;padding:0;margin:38px 0}.route-stops li{display:grid;grid-template-columns:60px 1fr;gap:24px;padding:30px 0;border-bottom:1px solid #dbddd2}.stop-number{font-size:28px;color:#8a3544}.route-stops h3{font-size:24px;font-weight:600;margin:8px 0}.route-stops p{max-width:720px;font-size:16px}.stop-address{color:#70766a;font-size:13px!important}.route-stops label{font-size:13px}.route-note{display:block;margin-top:20px}.route-note textarea{display:block;width:100%;max-width:720px;margin-top:8px;padding:12px;font-size:15px;border:1px solid #cdd1c6;border-radius:5px}.route-sources{border-top:1px solid #dbddd2;padding-top:25px}.route-sources h2{font-size:22px;letter-spacing:normal}.route-sources p{font-size:13px;max-width:850px}.route-sources a{text-decoration:underline}
+@media(max-width:650px){.route-lead{grid-template-columns:1fr;padding:20px}.route-stops li{grid-template-columns:35px 1fr;gap:15px}.route-lead img{height:220px}}
+.route-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 0;font-size:12px;line-height:1.5;letter-spacing:0;font-weight:400}.route-meta span{white-space:nowrap}.route-meta span+span::before{content:'·';margin:0 10px;color:#8a8c80}.route-lead{align-items:start}.route-lead img.route-sketch{height:auto;max-height:510px;object-fit:contain}.route-upload{margin:22px 0 0;padding:18px;border:1px dashed #b9c1b3;border-radius:6px;background:#fffffd}.route-upload label{display:block;font-size:14px}.route-upload input{display:block;max-width:100%;margin-top:12px;font-size:13px}.walk-photo-preview{display:block;width:auto;max-width:100%;max-height:260px;margin:16px 0;object-fit:contain}.walk-photo-preview[hidden],.route-upload button[hidden]{display:none}.route-upload button{padding:8px 12px;background:white;border:1px solid #ccc;cursor:pointer}.route-upload .photo-status{font-size:12px;margin:8px 0 0}
+.citywalk>.route-sources{margin:24px 0 30px;padding:18px 22px;background:#f7f5ed;border:1px solid #dedfd4;border-radius:6px}.citywalk>.route-sources h2{font-size:18px;margin:0 0 10px}.citywalk>.route-sources p{margin:8px 0;font-size:13px;line-height:1.65}
