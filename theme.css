@@ -236,4 +236,17 @@ body[data-page="record-store"] .record-reading{display:flex;flex-direction:colum
 body[data-page="record-store"] .record-reading h2{margin-top:0}
 body[data-page="record-store"] .record-film{margin:36px 0}
 @media(max-width:700px){body[data-page="record-store"] .record-visit{padding:20px}body[data-page="record-store"] .record-reading{gap:24px;margin:30px auto}}
-.video-seek{display:flex;align-items:center;gap:14px;margin:12px 0 0;color:#4f5448;font:12px Arial,sans-serif}.video-seek input{flex:1;min-width:0;accent-color:#8a3544;cursor:pointer;height:26px}.video-seek output{min-width:78px;text-align:right;font-variant-numeric:tabular-nums}.video-seek input:focus-visible{outline:2px solid #8a3544;outline-offset:4px}
+
+/* Short history stories with source links next to the claims they support. */
+.history-stories .history-intro{max-width:680px;line-height:1.8}
+.history-chapters{max-width:800px;margin:42px auto 0}
+.history-chapter{padding:28px 0 32px;border-top:1px solid #d9d9ce}
+.history-chapter-meta{display:flex;align-items:center;gap:16px;margin:0 0 16px;font:11px/1.5 Arial,sans-serif;letter-spacing:.09em;color:#70765e}
+.history-chapter-meta span{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#eef0e4;color:#663d45;letter-spacing:0}
+.history-chapter h3{font-size:clamp(22px,2.8vw,30px);line-height:1.25;letter-spacing:-.02em;color:#663d45;margin:0 0 14px}
+.history-chapter>p:not(.history-chapter-meta){max-width:700px;font-size:16px;line-height:1.85;margin:0 0 16px}
+.history-source{font-size:13px;line-height:1.7;text-decoration:underline;text-underline-offset:4px;color:#49675e;display:inline-block;max-width:100%}
+.history-stories .history-end{max-width:800px;margin:20px auto 24px;padding:26px;background:#f6f5ec}
+.history-stories .history-end h3{font-size:23px;margin:0 0 12px;line-height:1.3}
+.feed-status{font-size:12px;line-height:1.7;color:#68705e;margin:0 0 22px}
+@media(max-width:600px){.history-chapters{margin-top:26px}.history-chapter{padding:24px 0}.history-chapter>p:not(.history-chapter-meta){font-size:15px}.history-stories .history-end{padding:22px}}
