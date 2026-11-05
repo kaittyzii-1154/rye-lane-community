@@ -250,3 +250,6 @@ body[data-page="record-store"] .record-film{margin:36px 0}
 .history-stories .history-end h3{font-size:23px;margin:0 0 12px;line-height:1.3}
 .feed-status{font-size:12px;line-height:1.7;color:#68705e;margin:0 0 22px}
 @media(max-width:600px){.history-chapters{margin-top:26px}.history-chapter{padding:24px 0}.history-chapter>p:not(.history-chapter-meta){font-size:15px}.history-stories .history-end{padding:22px}}
+
+/* Dates lead each history entry. */
+.history-chapter h3.history-date{font-size:clamp(38px,5vw,58px);line-height:1.1;letter-spacing:-.035em;margin:0 0 20px;color:#8a3544}
