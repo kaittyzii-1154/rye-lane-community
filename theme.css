@@ -210,3 +210,30 @@ body :is(.small-note,.news-read,.cafe-watch){letter-spacing:0;line-height:1.65}
 @media(max-width:650px){.route-lead{grid-template-columns:1fr;padding:20px}.route-stops li{grid-template-columns:35px 1fr;gap:15px}.route-lead img{height:220px}}
 .route-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 0;font-size:12px;line-height:1.5;letter-spacing:0;font-weight:400}.route-meta span{white-space:nowrap}.route-meta span+span::before{content:'·';margin:0 10px;color:#8a8c80}.route-lead{align-items:start}.route-lead img.route-sketch{height:auto;max-height:510px;object-fit:contain}.route-upload{margin:22px 0 0;padding:18px;border:1px dashed #b9c1b3;border-radius:6px;background:#fffffd}.route-upload label{display:block;font-size:14px}.route-upload input{display:block;max-width:100%;margin-top:12px;font-size:13px}.walk-photo-preview{display:block;width:auto;max-width:100%;max-height:260px;margin:16px 0;object-fit:contain}.walk-photo-preview[hidden],.route-upload button[hidden]{display:none}.route-upload button{padding:8px 12px;background:white;border:1px solid #ccc;cursor:pointer}.route-upload .photo-status{font-size:12px;margin:8px 0 0}
 .citywalk>.route-sources{margin:24px 0 30px;padding:18px 22px;background:#f7f5ed;border:1px solid #dedfd4;border-radius:6px}.citywalk>.route-sources h2{font-size:18px;margin:0 0 10px}.citywalk>.route-sources p{margin:8px 0;font-size:13px;line-height:1.65}
+/* Local Connections: four distinct, light paper colours. */
+#local-connections .community-links>a{border:1px solid #cbd9e4;background:linear-gradient(135deg,#eaf3fa,#f7fafc);color:#343b2d;box-shadow:none;transition:box-shadow .18s,border-color .18s}
+#local-connections .community-links>a:nth-child(2){border-color:#e5cfc8;background:linear-gradient(135deg,#faece6,#fff8f4)}
+#local-connections .community-links>a:nth-child(3){border-color:#e0d8b4;background:linear-gradient(135deg,#faf4db,#fffdf4)}
+#local-connections .community-links>a:nth-child(4){border-color:#d8cfe5;background:linear-gradient(135deg,#f0eaf7,#faf7fd)}
+#local-connections .community-links>a:hover{box-shadow:0 4px 14px #343b2d0d;border-color:#a8afa2}
+/* Local directory: quiet paper cards with a restrained accent. */
+#local-connections .community-links>a:nth-child(n){position:relative;background:#fffffd;border:1px solid #deded7;border-radius:0;box-shadow:none;color:#343b2d;padding-top:32px}
+#local-connections .community-links>a::before{content:"";display:block;width:28px;height:2px;background:#9b5261;margin:0 0 20px}
+#local-connections .community-links>a>span{color:#72766c;font-size:10px;letter-spacing:.08em;line-height:1.5}
+#local-connections .community-links>a h3{margin:14px 0 12px}
+#local-connections .community-links>a p{color:#64685f}
+#local-connections .community-links>a:nth-child(n):hover{background:#faf9f5;border-color:#b8b9af;box-shadow:none}
+
+/* Shop-led profile: Inverted Audio */
+.shop-profile-link{display:block;color:inherit;text-decoration:none}.shop-profile-link:hover h2{color:#8a3544}.shop-profile-link:focus-visible{outline:2px solid #8a3544;outline-offset:6px}.record-deck{max-width:700px;font-size:21px;line-height:1.6;margin:24px 0 36px}.record-intro{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(240px,1fr);gap:36px;align-items:stretch}.record-intro>img{display:block;width:100%;height:100%;max-height:480px;object-fit:cover}.record-visit{padding:28px;background:#f7f5ed;border:1px solid #deded7}.record-visit h2,.record-reading h2,.record-film h2{font-size:24px;font-weight:600;letter-spacing:-.015em;line-height:1.3;margin:12px 0 18px}.record-visit p{font-size:15px;line-height:1.8}.record-visit>a{display:block;font-size:14px;margin:12px 0;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}.record-visit .small-note{font-size:12px;margin-top:24px;color:#666b61}.record-reading{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin:44px 0}.record-reading p{font-size:16px;line-height:1.85;margin:0 0 16px}.record-film{padding:30px;background:#f8f7f2;border:1px solid #deded7}.record-film>div{max-width:730px}.record-film p{font-size:15px;line-height:1.75}#record-video{display:block;width:100%;max-height:65vh;background:#161616;margin-top:24px}.record-background{border-top:1px solid #deded7;padding-top:22px}.record-source,.record-return a{font-size:14px;text-decoration:underline;text-underline-offset:4px}.record-return{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid #deded7;padding-top:24px}@media(max-width:700px){.record-intro,.record-reading{grid-template-columns:1fr;gap:24px}.record-intro>img{height:auto}.record-film,.record-visit{padding:20px}.record-deck{font-size:18px}}
+
+/* Record-store profile: a single reading column, then practical details. */
+body[data-page="record-store"] .record-profile{max-width:1000px;margin-inline:auto}
+body[data-page="record-store"] .record-intro{display:flex;flex-direction:column;gap:24px}
+body[data-page="record-store"] .record-intro>img{width:100%;height:auto;max-height:520px;object-fit:cover}
+body[data-page="record-store"] .record-visit{padding:24px 28px;border:0;border-left:3px solid #c8cdb8;background:#f7f6ef}
+body[data-page="record-store"] .record-reading{display:flex;flex-direction:column;gap:30px;max-width:740px;margin:44px auto}
+body[data-page="record-store"] .record-reading h2{margin-top:0}
+body[data-page="record-store"] .record-film{margin:36px 0}
+@media(max-width:700px){body[data-page="record-store"] .record-visit{padding:20px}body[data-page="record-store"] .record-reading{gap:24px;margin:30px auto}}
+.video-seek{display:flex;align-items:center;gap:14px;margin:12px 0 0;color:#4f5448;font:12px Arial,sans-serif}.video-seek input{flex:1;min-width:0;accent-color:#8a3544;cursor:pointer;height:26px}.video-seek output{min-width:78px;text-align:right;font-variant-numeric:tabular-nums}.video-seek input:focus-visible{outline:2px solid #8a3544;outline-offset:4px}
