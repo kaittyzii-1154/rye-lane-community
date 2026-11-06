@@ -228,14 +228,14 @@ body :is(.small-note,.news-read,.cafe-watch){letter-spacing:0;line-height:1.65}
 .shop-profile-link{display:block;color:inherit;text-decoration:none}.shop-profile-link:hover h2{color:#8a3544}.shop-profile-link:focus-visible{outline:2px solid #8a3544;outline-offset:6px}.record-deck{max-width:700px;font-size:21px;line-height:1.6;margin:24px 0 36px}.record-intro{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(240px,1fr);gap:36px;align-items:stretch}.record-intro>img{display:block;width:100%;height:100%;max-height:480px;object-fit:cover}.record-visit{padding:28px;background:#f7f5ed;border:1px solid #deded7}.record-visit h2,.record-reading h2,.record-film h2{font-size:24px;font-weight:600;letter-spacing:-.015em;line-height:1.3;margin:12px 0 18px}.record-visit p{font-size:15px;line-height:1.8}.record-visit>a{display:block;font-size:14px;margin:12px 0;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}.record-visit .small-note{font-size:12px;margin-top:24px;color:#666b61}.record-reading{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin:44px 0}.record-reading p{font-size:16px;line-height:1.85;margin:0 0 16px}.record-film{padding:30px;background:#f8f7f2;border:1px solid #deded7}.record-film>div{max-width:730px}.record-film p{font-size:15px;line-height:1.75}#record-video{display:block;width:100%;max-height:65vh;background:#161616;margin-top:24px}.record-background{border-top:1px solid #deded7;padding-top:22px}.record-source,.record-return a{font-size:14px;text-decoration:underline;text-underline-offset:4px}.record-return{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid #deded7;padding-top:24px}@media(max-width:700px){.record-intro,.record-reading{grid-template-columns:1fr;gap:24px}.record-intro>img{height:auto}.record-film,.record-visit{padding:20px}.record-deck{font-size:18px}}
 
 /* Record-store profile: a single reading column, then practical details. */
-body[data-page="record-store"] .record-profile{max-width:1000px;margin-inline:auto}
-body[data-page="record-store"] .record-intro{display:flex;flex-direction:column;gap:24px}
-body[data-page="record-store"] .record-intro>img{width:100%;height:auto;max-height:520px;object-fit:cover}
-body[data-page="record-store"] .record-visit{padding:24px 28px;border:0;border-left:3px solid #c8cdb8;background:#f7f6ef}
-body[data-page="record-store"] .record-reading{display:flex;flex-direction:column;gap:30px;max-width:740px;margin:44px auto}
-body[data-page="record-store"] .record-reading h2{margin-top:0}
-body[data-page="record-store"] .record-film{margin:36px 0}
-@media(max-width:700px){body[data-page="record-store"] .record-visit{padding:20px}body[data-page="record-store"] .record-reading{gap:24px;margin:30px auto}}
+body:is([data-page="record-store"],[data-page="etc-store"],[data-page="cafe-profile"]) .record-profile{max-width:1000px;margin-inline:auto}
+body:is([data-page="record-store"],[data-page="etc-store"],[data-page="cafe-profile"]) .record-intro{display:flex;flex-direction:column;gap:24px}
+body:is([data-page="record-store"],[data-page="etc-store"],[data-page="cafe-profile"]) .record-intro>img{width:100%;height:auto;max-height:520px;object-fit:cover}
+body:is([data-page="record-store"],[data-page="etc-store"],[data-page="cafe-profile"]) .record-visit{padding:24px 28px;border:0;border-left:3px solid #c8cdb8;background:#f7f6ef}
+body:is([data-page="record-store"],[data-page="etc-store"],[data-page="cafe-profile"]) .record-reading{display:flex;flex-direction:column;gap:30px;max-width:740px;margin:44px auto}
+body:is([data-page="record-store"],[data-page="etc-store"],[data-page="cafe-profile"]) .record-reading h2{margin-top:0}
+body:is([data-page="record-store"],[data-page="etc-store"],[data-page="cafe-profile"]) .record-film{margin:36px 0}
+@media(max-width:700px){body:is([data-page="record-store"],[data-page="etc-store"],[data-page="cafe-profile"]) .record-visit{padding:20px}body:is([data-page="record-store"],[data-page="etc-store"],[data-page="cafe-profile"]) .record-reading{gap:24px;margin:30px auto}}
 
 /* Short history stories with source links next to the claims they support. */
 .history-stories .history-intro{max-width:680px;line-height:1.8}
@@ -313,3 +313,34 @@ body[data-page="citywalk"] .route-map-image-link{position:static;display:block}
 body[data-page="citywalk"] .route-map-panel img.route-sketch{height:auto;max-height:none;width:100%}
 }
 @media(max-width:450px){body[data-page="citywalk"] .route-lead{padding:16px}body[data-page="citywalk"] .route-tabs{gap:8px}body[data-page="citywalk"] .route-tabs button{width:100%;padding:11px 14px}body[data-page="citywalk"] .route-lead .route-upload{padding:16px}}
+
+.shop-photo-grid>article{min-width:0;padding:20px;background:linear-gradient(135deg,#fdfcfe,#fff);border:1px solid #e8e5e9}
+.shop-photo-grid>article>img,.shop-photo-grid>article>a>img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+.shop-interview summary{cursor:pointer;font-size:14px;text-decoration:underline;text-underline-offset:4px;color:#8a3544;padding:10px 0;line-height:1.6}
+.shop-interview summary:focus-visible{outline:2px solid #8a3544;outline-offset:4px}
+.shop-interview video{display:block;width:100%;max-height:430px;background:#171717;margin:14px 0}
+.shop-interview .small-note{font-size:12px;margin:8px 0 0}
+@media(max-width:600px){.shop-photo-grid>article{padding:16px}}
+
+.shop-website{display:inline-block;font-size:13px;text-decoration:underline;text-underline-offset:4px;margin-top:14px}
+
+/* Store profiles share the same reading structure and image credits. */
+.shop-official-photo{margin:0;width:100%}.shop-official-photo>img{display:block;width:100%;height:auto;max-height:560px;object-fit:cover}
+.shop-official-photo figcaption{font-size:12px;color:#666b61;line-height:1.6;margin-top:10px}.shop-official-photo figcaption a{text-decoration:underline;text-underline-offset:3px}
+.record-film video{display:block;width:100%;max-height:65vh;background:#161616;margin-top:24px}
+
+/* Shared native captions: a single readable style on every interview. */
+video::cue{font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:400;color:#fff;background:rgba(0,0,0,.78);text-shadow:none}
+@media(max-width:600px){video::cue{font-size:14px}}
+/* The café interview is now a page section, rather than the former dialog. */
+body[data-page="cafe-profile"] #cafe-interview{width:auto;max-height:none;padding:30px;border:1px solid #e4e6df}
+body[data-page="cafe-profile"] #cafe-video{margin:24px 0 0;max-height:65vh;border-radius:0}
+@media(max-width:700px){body[data-page="cafe-profile"] #cafe-interview{padding:20px}}
+
+
+/* Align the history narrative with its section heading. */
+.history-chapters{margin-left:0;margin-right:0}
+.history-stories .history-end{margin-left:0;margin-right:0}
+
+/* Plain backgrounds; retain aligned history and black dates. */
+.history-chapter h3.history-date{color:#000}
