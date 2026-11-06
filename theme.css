@@ -253,3 +253,63 @@ body[data-page="record-store"] .record-film{margin:36px 0}
 
 /* Dates lead each history entry. */
 .history-chapter h3.history-date{font-size:clamp(38px,5vw,58px);line-height:1.1;letter-spacing:-.035em;margin:0 0 20px;color:#8a3544}
+
+/* White paper for the three connected walks, with geographic walking maps. */
+body[data-page="citywalk"]{background:#fffffd}
+body[data-page="citywalk"] .route-lead{background:#fff;border:1px solid #e5e5df;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:start}
+body[data-page="citywalk"] :is(.route-sources,.route-upload){background:#fdfdfb;border-color:#e2e3dc}
+.route-map-panel{min-width:0}.route-map-image-link{display:block}.route-map-panel img.route-sketch{display:block;width:100%;height:auto;max-height:none;background:#fcfcfa}.route-map-panel .route-map-caption{font-size:12px;line-height:1.6;color:#666b61;margin:10px 0 0}
+@media(max-width:700px){body[data-page="citywalk"] .route-lead{grid-template-columns:1fr;padding:20px}}
+
+/* One English photo picker per walk, beside the route map. */
+.route-lead .route-upload{margin-top:28px;padding:20px;background:#fdfdfb}
+.route-lead .route-upload h3{font-size:17px;line-height:1.4;margin:0 0 10px;font-weight:600}
+.route-lead .route-upload .upload-help{font-size:13px;line-height:1.7;margin:0 0 16px;color:#666b61}
+.route-upload .walk-photo-input{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;padding:0;margin:0}
+.route-upload label.walk-photo-choose{display:inline-block;padding:10px 14px;border:1px solid #8a3544;color:#8a3544;background:#fff;cursor:pointer;font-size:13px}
+.route-upload:focus-within .walk-photo-choose{outline:2px solid #8a3544;outline-offset:3px}
+.walk-photo-filename{display:block;margin-top:10px;font-size:12px;line-height:1.6;color:#666b61;overflow-wrap:anywhere}
+
+/* A quieter, aligned layout for the walk introduction and stops. */
+body[data-page="citywalk"] .route-lead{padding:28px;gap:36px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+body[data-page="citywalk"] .route-meta{gap:6px 0;line-height:1.8}
+body[data-page="citywalk"] .route-meta span{white-space:normal}
+body[data-page="citywalk"] .route-lead h2{font-size:clamp(25px,2.6vw,34px);line-height:1.2;margin:18px 0}
+body[data-page="citywalk"] .route-lead>div>p{margin:0 0 20px}
+body[data-page="citywalk"] .route-map{margin-top:0}
+body[data-page="citywalk"] .route-lead .route-upload{margin-top:26px;border-style:solid;border-color:#e4e4df;padding:20px}
+body[data-page="citywalk"] .route-map-panel img.route-sketch{max-height:610px;object-fit:contain}
+body[data-page="citywalk"] .route-stops{max-width:850px;margin:40px auto}
+body[data-page="citywalk"] .route-stops li{display:block;padding:28px 0}
+body[data-page="citywalk"] .route-stops h3{font-size:23px;margin:8px 0 12px}
+body[data-page="citywalk"] .route-stops .eyebrow{margin:0;font-size:11px}
+@media(max-width:700px){body[data-page="citywalk"] .route-lead{grid-template-columns:1fr;padding:20px;gap:26px}body[data-page="citywalk"] .route-stops{margin-top:28px}}
+
+/* Keep only the route overview; align the map with the photo panel. */
+body[data-page="citywalk"] .route-lead{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:stretch}
+body[data-page="citywalk"] .route-lead>div:first-child{display:flex;flex-direction:column;align-items:flex-start}
+body[data-page="citywalk"] .route-lead .route-upload{width:100%;box-sizing:border-box;margin-top:26px;margin-bottom:0}
+body[data-page="citywalk"] .route-map-panel{position:relative;display:flex;flex-direction:column;min-height:540px;padding-bottom:0}
+body[data-page="citywalk"] .route-map-image-link{display:flex;flex:1;min-height:0}
+body[data-page="citywalk"] .route-map-panel img.route-sketch{width:100%;height:100%;max-height:none;object-fit:contain}
+body[data-page="citywalk"] .route-map-panel .route-map-caption{position:absolute;top:100%;left:0;right:0;margin:10px 0 0;font-size:11px}
+body[data-page="citywalk"] .route-lead{margin-bottom:52px}
+@media(max-width:700px){body[data-page="citywalk"] .route-lead{grid-template-columns:1fr}body[data-page="citywalk"] .route-map-panel{min-height:0}body[data-page="citywalk"] .route-map-panel img.route-sketch{height:auto}}
+body[data-page="citywalk"] .route-lead>div:first-child>.route-map{margin-bottom:26px}
+body[data-page="citywalk"] .route-lead .route-upload{margin-top:auto}
+body[data-page="citywalk"] .route-map-image-link{position:absolute;inset:0}
+@media(max-width:700px){body[data-page="citywalk"] .route-map-image-link{position:static}body[data-page="citywalk"] .route-lead .route-upload{margin-top:0}}
+
+/* Fit the overview to small screens without squeezing the two columns. */
+body[data-page="citywalk"] .route-lead>div{min-width:0}
+body[data-page="citywalk"] .route-tabs button{max-width:100%;white-space:normal;text-align:left;line-height:1.5}
+body[data-page="citywalk"] .route-meta{overflow-wrap:anywhere}
+@media(max-width:800px){
+body[data-page="citywalk"] .route-lead{grid-template-columns:1fr;padding:20px;gap:24px;margin-bottom:30px}
+body[data-page="citywalk"] .route-lead>div:first-child>.route-map{margin-bottom:22px}
+body[data-page="citywalk"] .route-lead .route-upload{margin-top:0}
+body[data-page="citywalk"] .route-map-panel{min-height:0}
+body[data-page="citywalk"] .route-map-image-link{position:static;display:block}
+body[data-page="citywalk"] .route-map-panel img.route-sketch{height:auto;max-height:none;width:100%}
+}
+@media(max-width:450px){body[data-page="citywalk"] .route-lead{padding:16px}body[data-page="citywalk"] .route-tabs{gap:8px}body[data-page="citywalk"] .route-tabs button{width:100%;padding:11px 14px}body[data-page="citywalk"] .route-lead .route-upload{padding:16px}}
