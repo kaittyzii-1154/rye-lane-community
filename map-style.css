@@ -55,3 +55,5 @@ body>header{display:none}body>main{height:100dvh}
 @keyframes street-pop{0%{transform:translateY(0)}45%{transform:translateY(-9px)}75%{transform:translateY(-4px)}100%{transform:translateY(-6px)}}
 #enter-map{cursor:default}@media(prefers-reduced-motion:reduce){.street-hover .street-lift{animation:none;filter:none}}
 @media(max-width:600px){.opening-hint{font-size:10px;letter-spacing:0;padding:9px 10px}}
+
+.map-back{position:fixed;top:max(18px,env(safe-area-inset-top));left:22px;z-index:30;padding:9px 12px;background:#ffffffe6;color:#444;font:12px Arial,Helvetica,sans-serif;text-decoration:none;letter-spacing:.15px}.map-back:hover{color:#111}.map-back:focus-visible{outline:2px solid #555;outline-offset:3px}
