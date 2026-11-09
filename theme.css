@@ -344,3 +344,70 @@ body[data-page="cafe-profile"] #cafe-video{margin:24px 0 0;max-height:65vh;borde
 
 /* Plain backgrounds; retain aligned history and black dates. */
 .history-chapter h3.history-date{color:#000}
+
+/* Responsive reading and directory layout — 9 November 2026. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body[data-page="index"] .home-statement{max-width:68ch;font-size:16px;line-height:1.7;text-wrap:pretty}
+body[data-page="index"] .illustrated-directory{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 24px}
+body[data-page="index"] .illustrated-link:nth-child(n){aspect-ratio:auto;min-width:0;overflow:visible;padding:0 0 44px;position:relative;display:block}
+body[data-page="index"] .illustrated-link:nth-child(n) .artist-icon{position:relative;inset:auto;display:block;width:100%;height:auto;aspect-ratio:1;transform:none;margin:0}
+body[data-page="index"] .illustrated-link:nth-child(n):not(:last-child) h2{position:static;inset:auto;transform:none;margin:8px 4px -44px;min-height:36px;font-size:15px;font-weight:500;line-height:1.4;overflow-wrap:normal;text-wrap:balance}
+body[data-page="index"] .illustrated-link:last-child .speech-title{font-size:clamp(11px,1.55vw,15px);top:calc(44% - 19.36px);line-height:1.35}
+body[data-page="index"] .illustrated-link:focus-visible{outline-offset:4px}
+body[data-page="index"] .directory-caption{max-width:65ch;margin:30px auto 42px;font-size:11px;line-height:1.65;letter-spacing:.08em;text-wrap:balance}
+header nav a{display:flex;align-items:center;min-height:44px;padding:8px 2px}
+.header-note{display:inline-flex;align-items:center;justify-content:center;min-height:44px}
+:is(.route-tabs button,.filters button,.image-switch button,.solid,.download,.walk-photo-choose){min-height:44px}
+:where(main,section,article,figure,form,.route-map-panel,.record-visit){min-width:0}
+.breadcrumb{flex-wrap:wrap;line-height:1.6;row-gap:6px}
+@media(max-width:900px){
+ header{flex-wrap:wrap;gap:12px 24px;padding:18px 5%}
+ header nav{order:3;flex:0 0 100%;width:100%;gap:6px 24px;flex-wrap:wrap}
+ header nav,body[data-page="index"] header nav{font-size:14px}
+ header .brand{width:104px;font-size:19px}
+ header .brand::before{width:88px;height:58px;margin-bottom:6px}
+ .hero{padding-left:5%;padding-right:5%}
+ .walk-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .walk-cards article{padding:22px}
+ .scene-meta{flex-wrap:wrap;align-items:flex-start}
+ .scene-meta>span{line-height:1.6}
+ .your-view select,.your-view textarea,.route-note textarea{font-size:16px;line-height:1.5}
+ .your-view>div>p:last-child{font-size:16px;line-height:1.7}
+ .scene>p,.shop-photo-grid p:not(.eyebrow),.walk-cards p{font-size:15px;line-height:1.7}
+}
+@media(max-width:600px){
+ header{padding:16px 5%;gap:12px 20px}
+ header nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 12px}
+ header nav a{padding:9px 0;line-height:1.4}
+ .header-note{font-size:13px;padding:10px 16px}
+ body[data-page="index"] .hero-title{padding:24px 0 30px}
+ body[data-page="index"] .hero-title .home-title{font-size:clamp(28px,7.5vw,34px);line-height:1.15;letter-spacing:-.025em;text-wrap:balance}
+ .home-subtitle{max-width:32ch;font-size:16px;line-height:1.55;margin-bottom:24px;text-wrap:balance}
+ body[data-page="index"] .home-statement{text-align:left;font-size:16px;line-height:1.65;margin:0 auto}
+ body[data-page="index"] .illustrated-directory{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px}
+ body[data-page="index"] .illustrated-link:nth-child(n):not(:last-child) h2{font-size:14px;line-height:1.4;min-height:40px;margin-top:6px}
+ body[data-page="index"] .illustrated-link:last-child .speech-title{font-size:clamp(10px,2.8vw,13px)}
+ body[data-page="index"] .directory-caption{font-size:10px;margin:26px auto 30px}
+ .walk-cards,.story-photo-pair{grid-template-columns:minmax(0,1fr)}
+ .section{padding:40px 5%}
+ .route-meta{font-size:13px}
+ .route-stops h3,.shop-photo-grid h2{font-size:23px;line-height:1.3}
+ .dialog-content{padding:20px}
+ .dialog-bar{gap:12px;padding:12px 16px}
+ .dialog-bar button{min-width:44px;min-height:44px}
+ .trolley-gallery{grid-template-columns:44px minmax(0,1fr) 44px;column-gap:4px}
+ .photo-controls button{width:44px;height:44px}
+ footer{gap:24px;padding:32px 5%}
+}
+@media(prefers-reduced-motion:reduce){.illustrated-link{transition:none}}
+@media(max-width:600px){main .page-heading{font-size:clamp(28px,7.5vw,34px);line-height:1.18}.dialog-content h2{font-size:28px;line-height:1.2}}
+/* Give small-screen gallery images the full dialog width. */
+@media(max-width:600px){
+ .trolley-gallery>img{grid-column:1/-1;grid-row:1;height:auto;max-height:50vh;max-height:50svh;object-fit:contain}
+ .photo-controls button{grid-row:2}
+ .photo-controls span{grid-row:2}
+ dialog{max-height:90vh;max-height:90dvh}
+}
+
+/* Avoid long animated jumps when following section links on touch screens. */
+@media(max-width:900px){html{scroll-behavior:auto}}
