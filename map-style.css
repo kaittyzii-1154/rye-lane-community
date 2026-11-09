@@ -1,0 +1,57 @@
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f9f9f5;color:#242923}header{height:78px;border-bottom:1px solid #dddeda;display:flex;align-items:center;justify-content:space-between;padding:0 30px;background:white}.brand{font-weight:900;font-size:23px;letter-spacing:-1px;text-decoration:none;color:#252e24;line-height:.95}.brand span{display:block;font-size:9px;letter-spacing:3.2px;margin-top:6px}.subhead{font-size:10px;letter-spacing:2px;color:#6e766b}button{font-family:inherit;cursor:pointer}header button{background:none;border:none;font-size:11px;letter-spacing:.5px}main{display:grid;grid-template-columns:310px 1fr;height:calc(100dvh - 78px)}aside{background:#fff;border-right:1px solid #dddeda;display:flex;flex-direction:column;min-height:0}.intro{padding:29px 25px 0}.eyebrow{font-size:9px;letter-spacing:1.8px;font-weight:700;color:#6f8465}h1{font-size:34px;line-height:1.03;letter-spacing:-1.6px;margin:17px 0 12px;font-weight:500}.intro p{font-size:12px;color:#788071;margin-bottom:25px}input{width:100%;padding:13px 11px;border:1px solid #d9ded4;font-size:11px;background:#fafbf8;border-radius:0}.list-head{display:flex;justify-content:space-between;font-size:8px;letter-spacing:1px;color:#90978a;padding:24px 0 12px;border-bottom:1px solid #e4e6df}#directory{overflow:auto;flex:1;padding:0 25px}.entry{display:flex;gap:12px;padding:16px 0;border:0;border-bottom:1px solid #e9ece4;width:100%;text-align:left;background:transparent;align-items:center}.entry:hover,.entry.active{color:#a76544;background:#faf6ef}.entry b{font-size:9px;color:#829773;font-weight:400;min-width:23px}.entry strong{font-size:12px;display:block;font-weight:500}.entry small{font-size:9px;color:#989e92;display:block;margin-top:4px}.credit{padding:14px 25px;font-size:8px;line-height:1.6;color:#93998d;border-top:1px solid #eee}.viewport{position:relative;overflow:hidden;background:#f6f7f1}#canvas{position:absolute;inset:0}canvas{display:block;touch-action:none;outline:none}.view-title{position:absolute;top:28px;left:30px;pointer-events:none}.view-title p{font-size:13px;color:#646c5c;margin-top:8px}.view-switch{position:absolute;top:26px;right:25px;display:flex;background:#fff;border:1px solid #e0e4d9}.view-switch button{background:none;border:0;padding:12px 17px;font-size:10px;color:#838a7a}.view-switch .active{background:#e4eadb;color:#37472e}.controls{position:absolute;left:26px;bottom:58px;display:flex;flex-direction:column;box-shadow:0 2px 12px #2433180a}.controls button{background:white;border:1px solid #e1e6d9;border-bottom:0;width:37px;height:37px;font-size:18px}.controls button:last-child{border-bottom:1px solid #e1e6d9}.guide{position:absolute;bottom:22px;left:26px;font-size:8px;letter-spacing:1px;color:#7e8973}#status{position:absolute;top:50%;width:100%;text-align:center;font-size:12px;color:#6c7c5d;pointer-events:none}#detail{position:absolute;right:26px;bottom:55px;width:285px;background:white;padding:25px;box-shadow:0 8px 45px #1f351c24;border-top:3px solid #c38c62}#close{position:absolute;right:9px;top:5px;border:0;background:none;color:#85917b;font-size:23px}h2{font-size:24px;letter-spacing:-.8px;font-weight:500;margin:14px 0}#address{font-size:12px;color:#68745e;line-height:1.6}#coordinates{font-size:9px;color:#8b9580;line-height:1.8}#google{display:block;margin-top:20px;background:#33442b;color:white;padding:13px;font-size:11px;text-decoration:none}#focus{background:none;border:0;border-bottom:1px solid #929e87;padding:8px 0 4px;margin-top:10px;font-size:10px;color:#657656}[hidden]{display:none!important}@media(max-width:700px){header{height:65px;padding:0 18px}.subhead{display:none}main{height:calc(100dvh - 65px);grid-template-columns:1fr;grid-template-rows:1fr 170px}aside{grid-row:2;border-top:1px solid #ddd;display:grid;grid-template-columns:130px 1fr;overflow:hidden}.intro{padding:15px}.intro h1,.intro p,.list-head,.credit{display:none}.intro .eyebrow{font-size:8px}input{margin-top:14px;font-size:10px}#directory{padding:0 15px}.viewport{grid-row:1}.view-title{top:18px;left:18px}.view-switch{top:17px;right:15px}.guide{font-size:7px;left:18px;right:10px;bottom:13px}.controls{left:18px;bottom:38px}#detail{right:15px;bottom:35px;width:235px;padding:20px}h2{font-size:20px}.view-title p{font-size:10px}}
+
+/* Fixed bird's-eye monochrome map */
+main{display:block;height:calc(100dvh - 78px)}.viewport{height:100%;background:#f3f3f3}.brand{color:#151515}.subhead{color:#777}.eyebrow{color:#777}.view-title p{color:#555}#detail{border-color:#181818;box-shadow:0 8px 45px #0002}#address{color:#555}#coordinates{color:#888}#google{background:#111}#focus{color:#555;border-color:#999}#close{color:#555}.guide{color:#777}.controls button{border-color:#ddd}.view-title{background:#ffffffd9;padding:12px 15px;top:18px;left:18px}.controls{bottom:55px}#canvas canvas{cursor:grab}#canvas canvas:active{cursor:grabbing}@media(max-width:700px){main{height:calc(100dvh - 65px)}.viewport{height:100%}}
+/* Uncluttered axonometric site model */
+body,.viewport{background:#fff}header{height:70px}main{height:calc(100dvh - 70px)}#canvas{inset:0}.viewport{height:100%}#status{color:#777}@media(max-width:700px){header{height:65px}main{height:calc(100dvh - 65px)}}
+
+.street-name{position:absolute;pointer-events:none;font-family:Georgia,serif;font-style:italic;font-size:13px;white-space:nowrap;color:#222;letter-spacing:.3px;padding:1px 6px;background:#ffffffc9;transform-origin:center;z-index:1}#detail{z-index:3}
+
+.street-name{background:transparent;padding:0;border:0;box-shadow:none}
+
+#detail{position:absolute;right:auto;bottom:auto;width:285px;max-height:calc(100% - 24px);overflow-y:auto;padding:25px;background:white;border:1px solid #dedede;border-top:3px solid #111;box-shadow:0 8px 32px #0002;z-index:4}#popup-link{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}#listing-source{font-size:9px;letter-spacing:1px;text-transform:uppercase;color:#888}#category{font-size:11px;text-transform:capitalize;color:#777;margin:8px 0}#address{font-size:12px;line-height:1.6}#tenant-count{font-size:10px;color:#888;margin-top:16px}#shop-list{max-height:145px;overflow:auto;margin-top:8px;border-top:1px solid #eee}.shop-option{display:block;width:100%;text-align:left;border:0;border-bottom:1px solid #eee;background:#fff;color:#555;font-size:11px;padding:10px 6px}.shop-option.active{background:#eee;color:#111;font-weight:600}#google{margin-top:18px}#website{display:block;font-size:11px;color:#333;margin-top:14px;text-decoration:underline}#canvas canvas{cursor:grab}@media(max-width:600px){#detail{width:240px;padding:20px}#shop-list{max-height:110px}}
+
+/* Flat street labels and precise arrow interactions. */
+#canvas canvas,#canvas canvas:active{cursor:default}
+#street-labels{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.street-name{font-family:Arial,Helvetica,sans-serif;font-style:normal;font-size:12px;font-weight:500;line-height:18px;letter-spacing:.15px;color:#444;background:#fffffff0;padding:1px 5px;white-space:nowrap;visibility:hidden;transform:none}
+#detail{border-top-color:#ed6729;box-shadow:0 8px 32px #0002;transform-origin:top left}
+.shop-option.active{background:#fff0e6;color:#9b3c08}
+@media(max-width:600px){.street-name{font-size:11px}}
+
+.street-name{background:#ffffffd9;padding:1px 4px;font-size:12px}#street-labels{overflow:visible}
+
+#detail.peek{width:max-content;max-width:min(320px,calc(100vw - 24px));max-height:none;overflow:visible;padding:15px 18px;border-top:3px solid #ed6729;cursor:pointer}#detail.peek #listing-source,#detail.peek #category,#detail.peek #address,#detail.peek #tenant-count,#detail.peek #shop-list,#detail.peek #google,#detail.peek #website{display:none!important}#detail.peek h2{margin:0;font-size:19px;line-height:1.2}#detail.peek #close{display:none}.street-name{background:transparent!important;padding:0!important;text-shadow:-2px -2px 0 #fff,2px -2px 0 #fff,-2px 2px 0 #fff,2px 2px 0 #fff,0 0 5px #fff;font-weight:600}
+
+#street-labels{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:2}.street-name{font:700 12px Arial,Helvetica,sans-serif;fill:#444;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;letter-spacing:.1px;white-space:pre}
+
+#street-labels .street-name{position:static;transform:none;visibility:visible;font-size:12px}
+
+#street-labels .street-name{font-size:10px;font-weight:500;stroke-width:2px;text-shadow:none}
+#detail.peek{padding:10px 13px;max-width:min(260px,calc(100vw - 24px))}#detail.peek h2{font-size:15px;line-height:1.2}
+#detail:not(.peek){width:250px;padding:18px}#detail:not(.peek) h2{font-size:20px;margin:11px 0}#detail:not(.peek) #address{font-size:11px}#detail:not(.peek) #listing-source,#detail:not(.peek) #category,#detail:not(.peek) #tenant-count,#detail:not(.peek) .shop-option,#detail:not(.peek) #google,#detail:not(.peek) #website{font-size:10px}
+
+#street-labels .street-name{font-size:10px;visibility:inherit}
+
+#street-labels .street-name-small{font-size:7px;stroke-width:1.5px}
+
+#street-labels .street-name{stroke:none;stroke-width:0;paint-order:normal;text-shadow:none}
+
+/* Full-screen drawing zooms into its central street before revealing the map. */
+body.opening{overflow:hidden}
+body.opening>header,body.opening>main{visibility:hidden}
+#opening{position:fixed;inset:0;z-index:20;overflow:hidden;background:#fff}
+#enter-map{display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:0;margin:0;border:0;background:transparent;cursor:zoom-in;overflow:hidden;touch-action:none}
+#enter-map img{display:block;width:100%;height:100%;object-fit:contain;transform-origin:50% 56%;pointer-events:none}
+#enter-map:focus-visible{outline:2px solid #41543c;outline-offset:-6px}
+
+body:has(#opening:not([hidden])){overflow:hidden}
+
+body>header{display:none}body>main{height:100dvh}
+
+.opening-hint{position:absolute;bottom:max(28px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);margin:0;padding:10px 16px;background:#ffffffdf;color:#555;font:12px Arial,Helvetica,sans-serif;letter-spacing:.4px;white-space:nowrap;pointer-events:none}.opening-hint span{margin-left:10px}
+
+.opening-art{position:absolute;inset:0;pointer-events:none}.street-interaction{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}.street-hotspot{fill:transparent;pointer-events:all;cursor:pointer}.street-lift{opacity:0;pointer-events:none}.street-hover .street-lift{opacity:1;animation:street-pop .65s cubic-bezier(.2,.8,.2,1) both;filter:drop-shadow(0 5px 3px #00000018)}.street-hover .street-lift image{filter:contrast(1.5)}
+@keyframes street-pop{0%{transform:translateY(0)}45%{transform:translateY(-9px)}75%{transform:translateY(-4px)}100%{transform:translateY(-6px)}}
+#enter-map{cursor:default}@media(prefers-reduced-motion:reduce){.street-hover .street-lift{animation:none;filter:none}}
+@media(max-width:600px){.opening-hint{font-size:10px;letter-spacing:0;padding:9px 10px}}
