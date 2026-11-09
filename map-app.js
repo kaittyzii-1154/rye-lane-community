@@ -34,10 +34,9 @@ const mapData=window.REGISTERED_MAP;
 const roadMaterial=new T.MeshBasicMaterial({color:0xf4f4f4,side:T.DoubleSide});
 function roadRing(points){return points.map(p=>new T.Vector2(p[0],-p[1]))}
 for(const poly of mapData.roads){const shape=new T.Shape(roadRing(poly.outer));for(const ring of poly.holes)shape.holes.push(new T.Path(roadRing(ring)));const g=new T.ShapeGeometry(shape);g.rotateX(-Math.PI/2);const mesh=new T.Mesh(g,roadMaterial);mesh.position.y=-.08;scene.add(mesh);const edges=[poly.outer,...poly.holes];for(const ring of edges){const g=new T.BufferGeometry().setFromPoints(ring.map(p=>new T.Vector3(p[0],-.06,p[1])));scene.add(new T.Line(g,new T.LineBasicMaterial({color:0x777777,transparent:true,opacity:.55})))}}
-// Lift the railway onto a continuous viaduct, above the low buildings below it.
-// It uses normal depth testing: tracks cannot draw through foreground walls.
-const railHeight=19,railPositions=[],deckPositions=[];
-function railLine(a,b){railPositions.push(a[0],railHeight+.12,a[1],b[0],railHeight+.12,b[1])}
+// Keep tracks near ground level, below building floors so buildings occlude them.
+const railHeight=-.04,railPositions=[],deckPositions=[];
+function railLine(a,b){railPositions.push(a[0],railHeight+.045,a[1],b[0],railHeight+.045,b[1])}
 for(const points of mapData.rails){for(let i=1;i<points.length;i++){const a=points[i-1],b=points[i],dx=b[0]-a[0],dz=b[1]-a[1],length=Math.hypot(dx,dz);if(!length)continue;const nx=-dz/length,nz=dx/length;
 const corners=[ [a[0]-nx*1.25,a[1]-nz*1.25],[a[0]+nx*1.25,a[1]+nz*1.25],[b[0]+nx*1.25,b[1]+nz*1.25],[b[0]-nx*1.25,b[1]-nz*1.25] ];
 for(const j of [0,1,2,0,2,3])deckPositions.push(corners[j][0],railHeight,corners[j][1]);
